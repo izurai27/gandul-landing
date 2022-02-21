@@ -9,14 +9,8 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
-nav {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
 #heroSection {
-  margin-bottom: 20px;
+  margin-bottom: 5.33333vw;
 }
 
 #heroSection .hero-image {
@@ -48,26 +42,26 @@ nav {
   background-color: #2C2640;
   background-position: left;
   color: white;
-  padding: 25px;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  height: 350px;
+  padding: 6.66667vw;
+  padding-bottom: 13.33333vw;
+  padding-top: 13.33333vw;
+  height: 93.33333vw;
 }
 
 #heroSection .message .caption {
-  font-size: 38px;
+  font-size: 10.13333vw;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 42px;
+  margin-bottom: 11.2vw;
   font-family: 'DM Serif Display';
 }
 
 .btn-message {
-  font-size: 13pt;
-  padding: 10pt;
+  font-size: 3.46667vw;
+  padding: 2.66667vw;
   margin: auto;
   background-color: transparent;
-  border: 1px solid white;
+  border: 0.26667vw solid white;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
@@ -77,13 +71,13 @@ nav {
 }
 
 .btn-message:hover {
-  border: 1px solid #FEE99C;
+  border: 0.26667vw solid #FEE99C;
   background-color: #FEE99C;
   color: #5E5E44;
 }
 
 .benefitList {
-  margin-top: 182px;
+  margin-top: 48.53333vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,28 +90,29 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 148px;
+  margin-bottom: 39.46667vw;
 }
 
 .benefitList h2 {
-  font-size: 40px;
+  font-size: 10.66667vw;
   text-transform: uppercase;
   color: #2B282F;
 }
 
 .benefitList .benefit {
-  margin-top: 85px;
-  font-size: 23px;
+  margin-top: 22.66667vw;
+  font-size: 6.13333vw;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  padding: 5.33333vw;
 }
 
 .benefitList .benefit img {
   width: auto;
-  height: 50px;
+  height: 13.33333vw;
   text-align: center;
-  margin-bottom: 42px;
+  margin-bottom: 11.2vw;
 }
 
 .hubungi {
@@ -132,18 +127,18 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 74px;
-  padding-bottom: 74px;
+  padding-top: 19.73333vw;
+  padding-bottom: 19.73333vw;
   background-image: url("images/gold bg.svg");
   background-size: 150%;
   background-position: right;
 }
 
 .hubungi p {
-  font-size: 38px;
+  font-size: 10.13333vw;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 42px;
+  margin-bottom: 11.2vw;
   color: white;
 }
 /*# sourceMappingURL=style.css.map */

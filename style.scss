@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
+@function makeVW($input,$mediasize) {
+  @return $input/$mediasize*100vw;
+}
+
 *{
   margin:0;
   padding:0;
@@ -11,16 +15,8 @@ body{
   font-family: 'Karla', sans-serif;
 }
 
-nav{
-  position:absolute;
-  right: 10px;
-  top: 10px;
-  
-  
-}
-
 #heroSection{
-  margin-bottom:20px;
+  margin-bottom:makeVW(20,375);
   .hero-image{
     width:100vw;
     height: 120vw;
@@ -45,82 +41,72 @@ nav{
     // background-color: #d9523e;
     background-position: left;
     color:white;
-    padding:25px;
-    padding-bottom:50px;
-    padding-top:50px;
-    height:350px;
+    padding:makeVW(25,375 );
+    padding-bottom:makeVW(50,375 );
+    padding-top:makeVW(50,375 );
+    height:makeVW(350,375 );
 
     .caption{
-      font-size:38px;
+      font-size:makeVW(38,375 );
       text-transform: uppercase;
       text-align: center;
-      margin-bottom:42px;
+      margin-bottom:makeVW(42,375);
       font-family: 'DM Serif Display'
     }
 
-    // .btn-message{
-    //   font-size:13pt;
-    //   padding:10pt;
-    //   margin:auto;
-    //   background-color: transparent;
-    //   border:1px solid white;
-    //   color:white;
-    //   text-transform: uppercase;
-    //   box-shadow: 1px 1px white, -1px -1px white;
-    //   text-decoration: none;
-    // }
   }
 }
 
 .btn-message{
-  font-size:13pt;
-  padding:10pt;
+  font-size:makeVW(13,375 );
+  padding:makeVW(10,375 );
   margin:auto;
   background-color: transparent;
-  border:1px solid white;
+  border:makeVW(1,375 ) solid white;
   color:white;
   text-transform: uppercase;
-  // box-shadow: 1px 1px white, -1px -1px white;
+  
   text-decoration: none;
   cursor:pointer;
   border-radius:5px;
   text-align: center;
 
   &:hover{
-    border:1px solid #FEE99C;
+    border:makeVW(1,375 ) solid #FEE99C;
     background-color: #FEE99C;
     color:#5E5E44;
   }
 }
 
 .benefitList{
-  margin-top:182px;
+  margin-top:makeVW(182,375 );
   display:flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
-  margin-bottom: 148px;
+  margin-bottom:makeVW(148,375 );
 
   h2{
-    font-size:40px;
+    font-size:makeVW(40,375 );
     text-transform: uppercase;
     color:#2B282F;
   }
 
   .benefit{
 
-    margin-top:85px;
-    font-size: 23px;
+    margin-top:makeVW(85,375 );
+    font-size: makeVW(23,375 );
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    padding:makeVW(20,375);
 
 
     img{
           width:auto;
-          height:50px;
+          height:makeVW(50,375 );
           text-align: center;
-          margin-bottom:42px;
+          margin-bottom:makeVW(42,375 );
 
         }
 
@@ -137,17 +123,17 @@ nav{
   display:flex;
   flex-direction: column;
   justify-content: center;
-  padding-top:74px;
-  padding-bottom:74px;
+  padding-top:makeVW(74,375 );
+  padding-bottom:makeVW(74,375 );
   background-image: url('images/gold\ bg.svg');
-    background-size: 150%;
-    background-position: right;
+  background-size: 150%;
+  background-position: right;
 
   p{
-    font-size:38px;
+    font-size:makeVW(38,375);
     text-transform: uppercase;
     text-align: center;
-    margin-bottom:42px;
+    margin-bottom:makeVW(42,375 );
     color:white;
   }
   
