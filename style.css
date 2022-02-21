@@ -3,6 +3,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -36,15 +38,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("images/gold bg.svg");
-  background-size: 150%;
+  background-image: url("images/goldBg3Top.svg");
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-color: #2C2640;
-  background-position: left;
+  background-color: #002f5f;
+  background-position: top;
   color: white;
   padding: 6.66667vw;
   padding-bottom: 13.33333vw;
-  padding-top: 13.33333vw;
+  padding-top: 20vw;
   height: 93.33333vw;
 }
 
@@ -53,14 +55,13 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 11.2vw;
-  font-family: 'DM Serif Display';
 }
 
 .btn-message {
   font-size: 3.46667vw;
   padding: 2.66667vw;
   margin: auto;
-  background-color: transparent;
+  background-color: #002f5f;
   border: 0.26667vw solid white;
   color: white;
   text-transform: uppercase;
@@ -71,9 +72,10 @@ body {
 }
 
 .btn-message:hover {
-  border: 0.26667vw solid #FEE99C;
-  background-color: #FEE99C;
-  color: #5E5E44;
+  color: #002f5f;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#ffe189), color-stop(#f9d880), color-stop(#f4ce78), color-stop(#eec56f), color-stop(#e8bc67), color-stop(#e4b661), color-stop(#e0af5c), color-stop(#dca956), color-stop(#d9a452), color-stop(#d59f4e), color-stop(#d29a4a), to(#ce9546));
+  background-image: linear-gradient(to left bottom, #ffe189, #f9d880, #f4ce78, #eec56f, #e8bc67, #e4b661, #e0af5c, #dca956, #d9a452, #d59f4e, #d29a4a, #ce9546);
+  border: none;
 }
 
 .benefitList {
@@ -116,7 +118,7 @@ body {
 }
 
 .hubungi {
-  background-color: #2C2640;
+  background-color: #002f5f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,9 +131,10 @@ body {
           justify-content: center;
   padding-top: 19.73333vw;
   padding-bottom: 19.73333vw;
-  background-image: url("images/gold bg.svg");
-  background-size: 150%;
-  background-position: right;
+  background-image: url("images/goldBg3Btm.svg");
+  background-size: 75%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
 }
 
 .hubungi p {
@@ -140,5 +143,130 @@ body {
   text-align: center;
   margin-bottom: 11.2vw;
   color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  #heroSection {
+    width: 100vw;
+    height: 33.33333vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-image: url("images/goldBg3Top.svg"), url("images/goldBg3Btm.svg");
+    background-repeat: no-repeat no-repeat;
+    background-position: top left, right bottom;
+    background-size: 40%;
+    background-color: #002f5f;
+    padding-left: 5.55556vw;
+  }
+  #heroSection .hero-image {
+    width: 29.83333vw;
+    height: 36.11111vw;
+    margin-right: 9.22222vw;
+    margin-top: 5.83333vw;
+  }
+  #heroSection .message {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: transparent;
+    padding-top: 9.72222vw;
+    height: 17.22222vw;
+    width: 30.27778vw;
+    background-image: none;
+    margin-top: 9.72222vw;
+    padding-left: 0;
+  }
+  #heroSection .message .caption {
+    font-size: 2.77778vw;
+    text-align: left;
+    margin-bottom: 1.83333vw;
+    margin-top: 100px;
+  }
+  .btn-message {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 1.38889vw;
+    margin: 0;
+    margin-bottom: 7.11111vw;
+  }
+  .benefitList {
+    margin-top: 13.33333vw;
+    display: block;
+    padding: 5.55556vw;
+    width: 100vw;
+    margin-bottom: 2.77778vw;
+  }
+  .benefitList h2 {
+    font-size: 3.61111vw;
+    text-align: left;
+    margin-bottom: 4.88889vw;
+  }
+  .benefitList .benefitcontainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+  .benefitList .benefit {
+    font-size: 1.5vw;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 2px 2px 10px grey;
+            box-shadow: 2px 2px 10px grey;
+    border-radius: 20px;
+  }
+  .benefitList .benefit img {
+    height: 5.11111vw;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+  .hubungi {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 4.61111vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .hubungi p {
+    font-size: 2.22222vw;
+    max-width: 38.88889vw;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .hubungi a {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
