@@ -94,9 +94,9 @@ setInterval(() => {
   
   console.log(random)
   hero.innerHTML = `<div class='hero-image'>
-                    <img src='${listGimmick[random].image}'/>
-                  </div>
-                  <div class='message' >
+                      <img src='${listGimmick[random].image}'/>
+                    </div>
+                    <div class='message' >
                   
                     <div class='caption'>${listGimmick[random].caption}</div>
                     <a class="btn-message" href="https://api.whatsapp.com/send?phone=62895335200701">${listGimmick[random].message}</a>

@@ -15,13 +15,17 @@
 
 body{
   font-family: 'Karla', sans-serif;
+  
 }
 
 #heroSection{
   margin-bottom:makeVW(20,375);
+  height: 100vh;
   .hero-image{
     width:100vw;
     height: 120vw;
+    width:100vw;
+    height: 60%;
 
     img{
       width:100%;
@@ -37,19 +41,22 @@ body{
     flex-direction: column;
     justify-content: center;
     background-image: url('images/goldBg3Top.svg');
-    background-size: 100%;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-color: #002f5f;
     // background-color: #d9523e;
-    background-position: top;
+    background-position: top left;
     color:white;
     padding:makeVW(25,375 );
     padding-bottom:makeVW(50,375 );
     padding-top:makeVW(75,375 );
     height:makeVW(350,375 );
+    height:40%;
 
     .caption{
       font-size:makeVW(38,375 );
+      font-size: 1.8rem;
+      font-weight: bolder;
       text-transform: uppercase;
       text-align: center;
       margin-bottom:makeVW(42,375);
@@ -133,6 +140,10 @@ body{
   background-size: 75%;
   background-position: right bottom;
   background-repeat: no-repeat;
+  // position: absolute;
+  // bottom:0;
+  // width: 100%;
+  // left:0;
 
   p{
     font-size:makeVW(38,375);
