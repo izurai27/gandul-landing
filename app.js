@@ -75,8 +75,15 @@ const listGimmick = [
 
 const hero = document.querySelector('#heroSection');
 
-const random = Math.floor(Math.random()*listGimmick.length);
-hero.innerHTML = `<div class='hero-image'>
+// let random = Math.floor(Math.random()*listGimmick.length);
+let random = 0;
+
+setInterval(() => {
+  
+  random = (random < listGimmick.length-1 ) ? random+1 : 0 
+  
+  console.log(random)
+  hero.innerHTML = `<div class='hero-image'>
                     <img src='${listGimmick[random].image}'/>
                   </div>
                   <div class='message' >
@@ -85,9 +92,14 @@ hero.innerHTML = `<div class='hero-image'>
                     <a class="btn-message" href="https://api.whatsapp.com/send?phone=62895335200701">${listGimmick[random].message}</a>
                   </div>
                   `;
+}, 5000)
+// let random = 0;
 
-console.log( `<dir class='hero-image'>
-<img src='${listGimmick[0].image}'/>
-</dir>
-<dir class='main-message'>Solusi tepat untuk masalahmu'</div>
-<dir class='caption'>${listGimmick[0].caption}</div>`)
+
+
+
+// console.log( `<dir class='hero-image'>
+// <img src='${listGimmick[0].image}'/>
+// </dir>
+// <dir class='main-message'>Solusi tepat untuk masalahmu'</div>
+// <dir class='caption'>${listGimmick[0].caption}</div>`)
