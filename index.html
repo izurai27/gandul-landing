@@ -15,43 +15,159 @@
   <!-- <nav>
       <img src="images/icon-hamburger.svg" alt="">
   </nav> -->
-  <div id="heroSection"></div>
-  <div class="benefitList">
+  <aside id="heroSection"></aside>
+  
+  
+  <section class="benefitList">
     <h2> Kenapa Di Sini?</h2>
     <div class="benefitcontainer">
       <div class="benefit">
-    <img src="images/handshake-solid.svg" alt="">
-    <div >akad syariah</div>
+        <img src="images/handshake-solid.svg" alt="">
+        <div >akad syariah</div>
+        <div class="info">
+          <div class="kata">Akad yang digunakan: akad syariah Ba'i wal Ijarah Muntahiyyah Bit Tamlik dua akad dalam satu perjanjian)</div>
+        </div>
       </div>
       <div class="benefit">
         <img src="images/icon-snappy-process.svg" alt="">
         <div >Proses cepat</div>
+        <div class="info">
+          <div class="kata">Apabila pengajuan dilakukan sebelum jam 12 siang maka akan cair pada sore hari di hari yang sama.</div>
+        </div>
       </div>
       <div class="benefit">
         <img src="images/user-check-solid.svg" alt="">
         <div>Persyaratan mudah</div>
+        <div class="info">
+          <ul>
+            <li>KTP pemohon dan Pasangan (jika sudah menikah)</li>
+            <li>KK/Surat nikah, STNK, BPKB</li>
+          </ul>
+          <!-- <div class="kata">keterarnganafajghauhdsjahjdhgjahdguahsdfjdsjvnsadfvaughughaudhjhu</div> -->
+        </div>
       </div >
       <div class="benefit">
         <img src="images/car-crash-solid.svg" alt="">
         <div >asuransi lengkap</div>
-        
+        <div class="info">
+          <ul>Asuransi yang tercover meliputi
+            <li>Unit kendaraan (TLO)</li>
+            <li>Personal Accident</li>
+            <li>Hospitalized Cash Plan</li>
+          </ul>
+          <!-- <div class="kata">keterarnganafajghauhdsjahjdhgjahdguahsdfjdsjvnsadfvaughughaudhjhu</div> -->
+        </div>        
       </div>
       <div class="benefit">
         <img src="images/rupiah-sign-solid.svg" alt="">
         <div >plafon tinggi</div>
-        
+        <div class="info">
+          <div class="kata">70 - 100% dari harga kendaraan</div>
+        </div>
       </div>
       <div class="benefit">
         <img src="images/shield-solid.svg" alt="">
-        <div >terdaftar dan diawasi OJK</div>    
+        <div >terdaftar dan diawasi OJK</div>
+        <div class="info">
+          <div class="kata">Bekerja sama dengan<br> <a href="https://www.baf.id/" target="_blank">PT Bussan Auto Finance (BAF)</a></div>
+        </div>    
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="hubungi">
+  <section class="simulasi">
+    <h2>Cek di sini untuk Taksiran BPKBmu</h2>
+    <form>
+      <div class="motor question">
+          <label for="motor" class="label">Informasi motor</label>
+          <select data-item="merk" name="merk" id="merkMtr" class="input" required>
+            <option disabled selected>Merk Motor</option>
+            <option value="Honda">Honda</option>
+            <option value="Yamaha">Yamaha</option>
+            <option value="Suzuki">Suzuki</option>
+            <option value="Kawasaki">Kawasaki</option>
+          </select>
+          <select data-item="tahun" name="thn" id="tahun" class="input" required>
+            <option disabled selected>Produksi tahun</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+          </select>
+      </div>
+      <div class="bpkb question">
+        <label for="bpkb" class="label">Kepemilikan BPKB</label>
+        <select data-item="bpkb" name="bpkb" id="bpkb" class="input" required>
+          <option disabled selected>BPKB atas nama</option>
+            <option value="sendiri/pasangan">Sendiri/pasangan</option>
+            <option value="orang tua">Orang tua</option>
+            <option value="orang lain">Orang lain</option>
+        </select>
+      </div>
+      <div class="pajak question">
+        <label for="pajak" class="label">Status pajak kendaraan</label>
+        <select data-item="pajak" name="pajak" id="pajak" class="input" required>
+          <option disabled selected>Status pajak</option>
+            <option value="Hidup">Hidup</option>
+            <option value="Telat 1 tahun">Telat 1 tahun</option>
+            <option value="Telat 2 tahun">Telat 2 tahun</option>
+            <option value="Telat 3 tahun">Telat 3 tahun</option>
+        </select>
+      </div>
+      <div class="lunas question">
+        <label for="lunas" class="label">Cara pelunasan kendaraan </label>
+        <select data-item="lunas" name="lunas" id="lunas" class="input" required>
+          <option disabled selected>Pilihan Pelunasan</option>
+            <option value="BAF">Lunas melalui Finance BAF</option>
+            <option value="Adira Finance">Lunas melalui Finance Adira Finance</option>
+            <option value="FIF">Lunas melalui Finance FIF</option>
+            <option value="OTO">Lunas melalui Finance OTO</option>
+            <option value="Finance Lainnya">Lunas melalui Finance Lainnya</option>
+            <option value="Lunas Cash">Lunas Cash</option>
+        </select>
+      </div>
+      <div class="nama question">
+        <label for="nama" class="label">Nama Lengkap</label>
+        <input data-item="nama" class="input" type="text" required>
+      </div>
+      <div class="hp question">
+        <label for="hp" class="label">Nomor Whatsapp</label>
+        <input data-item="hp" class="input" type="text" required>
+      </div>
+      <div class="kota question">
+        <label for="kota" class="label">Kota</label>
+        <select data-item="kota" name="kota" id="kota" class="input" required>
+            <option disabled selected>Pilihan Kota</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Depok">Depok</option>
+            <option value="Bogor">Bogor</option>
+            <option value="Tangerang">Tangerang</option>
+            <option value="Bekasi">Bekasi</option>
+        </select>
+      </div>
+      <div class="rumah question">
+        <label for="rumah" class="label">Kota</label>
+        <select data-item="rumah" name="rumah" id="rumah" class="input" required>
+            <option disabled selected>Kepemilikan rumah</option>
+            <option value="Milik Sendiri">Milik Sendiri</option>
+            <option value="Milik Orang tua">Milik Orang tua</option>
+            <option value="Sewa/rumah dinas">Sewa/rumah dinas</option>
+        </select>
+      </div>
+      <button class='btn-message' id="submitSimulasi" type="submit" value="'submit">submit</button>
+    </form>
+  </section>
+
+  <footer class="hubungi">
     <p>Hubungi kami untuk info lebih lanjut</p>
     <a class='btn-message' href="https://api.whatsapp.com/send?phone=62895335200701">klik di sini</a>
-  </div>
+  </footer>
   
 
 

@@ -75,7 +75,7 @@ const listGimmick = [
 
 const hero = document.querySelector('#heroSection');
 
-// let random = Math.floor(Math.random()*listGimmick.length);
+
 let random = 0;
 hero.innerHTML = `<div class='hero-image'>
                     <img src='${listGimmick[random].image}'/>
@@ -92,7 +92,7 @@ setInterval(() => {
   
   random = (random < listGimmick.length-1 ) ? random+1 : 0 
   
-  console.log(random)
+  
   hero.innerHTML = `<div class='hero-image'>
                       <img src='${listGimmick[random].image}'/>
                     </div>
@@ -103,13 +103,73 @@ setInterval(() => {
                   </div>
                   `;
 }, 5000)
-// let random = 0;
 
+const benefit = document.querySelectorAll('.benefit');
 
+benefit.forEach(element => {
+  
+  const info = element.querySelector('.info');
 
+  element.addEventListener('click', () => {
+    info.classList.toggle('infoON')
+  })
+})
 
-// console.log( `<dir class='hero-image'>
-// <img src='${listGimmick[0].image}'/>
-// </dir>
-// <dir class='main-message'>Solusi tepat untuk masalahmu'</div>
-// <dir class='caption'>${listGimmick[0].caption}</div>`)
+const input = document.querySelectorAll('.input')
+let merk, thn, bpkb, pajak, lunas, nama, hp, kota, rumah
+
+input.forEach(element => {
+  const inputData = element.dataset.item;
+  element.addEventListener('change', (event)=> {
+    console.log(event.target.value)
+
+    switch (inputData){
+    case 'merk':
+      merk = event.target.value;
+      break;
+    case 'tahun':
+      thn = event.target.value;
+      break;
+    case 'bpkb':
+      bpkb = event.target.value;
+      break;
+    case 'pajak':
+      pajak = event.target.value;
+      break;
+    case 'lunas':
+      lunas = event.target.value;
+      break;
+    case 'nama': 
+      nama = event.target.value;
+      break;
+    case 'hp':
+      hp = event.target.value;
+      break;
+    case 'kota':
+      kota = event.target.value;
+      break;
+    case 'rumah':
+      rumah = event.target.value;
+      break;
+  }
+  })
+
+  
+})
+
+const submitSimulasi = document.querySelector('#submitSimulasi')
+
+submitSimulasi.addEventListener('click', (event)=>{
+  event.preventDefault()
+  const arrayInput = [merk, thn, bpkb, pajak, lunas, nama, hp, kota, rumah]
+  
+  if(arrayInput.includes(undefined)){
+    alert('Mohon dilengkapi semua datanya')
+  } else {
+    let text = `Hai, saya mau info taksiran BPKB saya.\n Merk ${merk}, tahun ${thn},\n BPKB ${bpkb},\n pajak ${pajak},\n Pelunasan kendaraan ${lunas},\n rumah ${rumah}.\n Terima kasih,\n saya *${nama}*,\n nomor wa *${hp}*,\n di ${kota}`
+    let encoded = encodeURI(text)
+    window.open("https://wa.me/62895335200701?text="+encoded,"_blank");
+
+  }
+  
+})
