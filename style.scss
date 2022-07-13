@@ -109,7 +109,8 @@ h2{
     // background-color: #FEE99C;
     color:#002f5f;
     background-image: linear-gradient(to left bottom, #ffe189, #f9d880, #f4ce78, #eec56f, #e8bc67, #e4b661, #e0af5c, #dca956, #d9a452, #d59f4e, #d29a4a, #ce9546);
-    border:none;
+    // border:none;
+    border-color: #ffe189;
   }
 }
 
@@ -284,20 +285,26 @@ h2{
     height:makeVW(600,1800 );
     display:flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-image: url('images/goldBg3Top.svg'), url('images/goldBg3Btm.svg');
     background-repeat: no-repeat no-repeat;
     background-position: top left, right bottom;
     background-size: 40%;
     background-color: #002f5f;
-    padding-left:makeVW(100,1800);
+    align-items: center;
+    padding-inline: makeVW(30,1800);
+    // padding-left:makeVW(100,1800);
    
     
     .hero-image{
       width:makeVW(537,1800);
       height: makeVW(650,1800);
-      margin-right:makeVW(166,1800 );
-      margin-top:makeVW(105,1800 );
+      // margin-right:makeVW(166,1800 );
+      // margin-top:makeVW(105,1800 );
+
+      img{
+        transform:translateY(4rem);
+      }
       
     }
   
@@ -305,12 +312,15 @@ h2{
       
       align-items: flex-start;
       background-color: transparent;
-      padding-top:makeVW(175,1800 );
+      // padding-top:makeVW(175,1800 );
       height:makeVW(310,1800 );
       width:makeVW(545,1800);
+      width:makeVW(600,1800);
       background-image: none;
       margin-top:makeVW(175,1800);
-      margin-left:5vw;
+      margin-top:makeVW(0,1800);
+      // margin-left:15vw;
+      padding:0;
       
   
       .caption{
@@ -331,7 +341,8 @@ h2{
     height:fit-content;
     font-size:makeVW(25,1800 );
     margin:0;
-    margin-bottom:makeVW(128,1800);
+    // margin-bottom:makeVW(128,1800);
+    box-sizing: border-box;
   
   }
   
@@ -367,6 +378,19 @@ h2{
         height:makeVW(92,1800 );
         margin:0;
         margin-bottom: 35px;
+      }
+
+
+      &:hover{
+        img{
+          transform: scale(1.5);
+          transition: 0.5s ease-in-out
+        }
+
+        // div{
+        //   font-size: 1.2em;
+        // }
+        
       }
     }
   }

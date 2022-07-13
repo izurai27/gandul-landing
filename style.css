@@ -103,7 +103,7 @@ h2 {
   color: #002f5f;
   background-image: -webkit-gradient(linear, right top, left bottom, from(#ffe189), color-stop(#f9d880), color-stop(#f4ce78), color-stop(#eec56f), color-stop(#e8bc67), color-stop(#e4b661), color-stop(#e0af5c), color-stop(#dca956), color-stop(#d9a452), color-stop(#d59f4e), color-stop(#d29a4a), to(#ce9546));
   background-image: linear-gradient(to left bottom, #ffe189, #f9d880, #f4ce78, #eec56f, #e8bc67, #e4b661, #e0af5c, #dca956, #d9a452, #d59f4e, #d29a4a, #ce9546);
-  border: none;
+  border-color: #ffe189;
 }
 
 .benefitList {
@@ -298,32 +298,39 @@ h2 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     background-image: url("images/goldBg3Top.svg"), url("images/goldBg3Btm.svg");
     background-repeat: no-repeat no-repeat;
     background-position: top left, right bottom;
     background-size: 40%;
     background-color: #002f5f;
-    padding-left: 5.55556vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-inline: 1.66667vw;
   }
   #heroSection .hero-image {
     width: 29.83333vw;
     height: 36.11111vw;
-    margin-right: 9.22222vw;
-    margin-top: 5.83333vw;
+  }
+  #heroSection .hero-image img {
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
   }
   #heroSection .message {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     background-color: transparent;
-    padding-top: 9.72222vw;
     height: 17.22222vw;
     width: 30.27778vw;
+    width: 33.33333vw;
     background-image: none;
     margin-top: 9.72222vw;
-    margin-left: 5vw;
+    margin-top: 0vw;
+    padding: 0;
   }
   #heroSection .message .caption {
     font-size: 2.77778vw;
@@ -341,7 +348,8 @@ h2 {
     height: fit-content;
     font-size: 1.38889vw;
     margin: 0;
-    margin-bottom: 7.11111vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .benefitList {
     margin-top: 13.33333vw;
@@ -379,6 +387,12 @@ h2 {
     height: 5.11111vw;
     margin: 0;
     margin-bottom: 35px;
+  }
+  .benefitList .benefit:hover img {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   .simulasi {
     -webkit-box-align: start;
